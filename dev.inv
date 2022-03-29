@@ -1,0 +1,2 @@
+[web server]
+172.31.18.225 ansible_user=root
