@@ -3,10 +3,10 @@ pipeline{
     stages{
         stage('SCM Checkout'){
             steps{
-                git 'https://github.com/Nithin-optit/play-1.git'
+                git credentialsId: 'git-credentials', url: 'https://github.com/Nithin-optit/play-1.git'
             }
         }
-        stage('Execute Ansible'){
+        stage('Execute ansible'){
             steps{
                 ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'ansible-playbook.yml'
             }
