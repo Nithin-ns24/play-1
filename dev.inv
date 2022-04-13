@@ -1,2 +1,2 @@
 [localhost]
- 172.31.17.163 ansible_user=ubuntu
+ 172.31.21.185 ansible_user=ubuntu
