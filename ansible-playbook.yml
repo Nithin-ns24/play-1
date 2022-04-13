@@ -15,5 +15,4 @@
       package: name=php-gd state=present
     - name: "Install php-mysql"
       package: name=php-mysql state=present
-    - name: "Install mysqlserver"
-      package: name=mysql-server state=present
+   
